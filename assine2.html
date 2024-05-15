@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+    <link rel="stylesheet" href="style.css"> <!-- Importando o arquivo CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="/fotos/icon-logo[16x16].png">
+
+</head>
+<body>
+
+  <div id="header-container">
+    <header= id="Barra">
+        <nav> 
+            <div class="logo">
+                <a href="home-page.html">
+                    <image id="icon" src="fotos/icon-logo.png" alt= 'icon'>         
+                </a>
+                <a href="home-page.html">
+                    <image id="name" src="fotos/kopikat-name-bg-preto.png" alt='Frame_6'>         
+                </a>
+                
+            </div>
+            <ul class="nav-links">
+                <li><a href="assine.html">assine</a></li>
+            </ul>
+
+            <!--Esse botão vai ter que levar para uma página de login-->
+            <div class="nav-buttons">
+                <a href="login.html" class="nav-button">entrar</a>
+            </div>
+
+        </nav>
+    </header>
+</div>
+
+    <div id="parte2" class="assine" action="conexao.php" method="post">
+      <h2>FALE UM POUCO MAIS SOBRE VOCÊ</h2>
+      <form>
+        <label for="telefone">Telefone *</label><br>
+        <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(00) 00000-0000" maxlength="15" oninput="this.value = formatarTelefone(this.value);" required><br><br>
+        
+        <label for="segundo_telefone">Segundo telefone</label><br>
+        <input type="tel" id="segundo_telefone" name="segundo_telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(00) 00000-0000" maxlength="15" oninput="this.value = formatarTelefone(this.value);"><br><br>
+        
+        <label for="cep">CEP *</label><br>
+        <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" maxlength="9" oninput="this.value = formatarCEP(this.value);" required><br><br>
+        
+        <label for="endereco">Endereço *</label><br>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+        
+        <label for="numero_residencia">Número da residência *</label><br>
+        <input type="text" id="numero_residencia" name="numero_residencia" required><br>
+          
+        <div class="sem_numero"">
+          <input type="checkbox" id="sem_numero" name="sem_numero" onchange="toggleNumeroResidencia()"">
+          <label for="sem_numero">sem número</label>
+        </div><br>
+        
+        <label for="complemento">Complemento</label><br>
+        <textarea id="complemento" name="complemento" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="bairro">Bairro *</label><br>
+        <input type="text" id="bairro" name="bairro" required><br><br>
+        
+        <label for="cidade">Cidade *</label><br>
+        <input type="text" id="cidade" name="cidade" required><br><br>
+        
+        <label for="estado">Estado *</label><br>
+        <select id="estado" name="estado" required>
+          <option value="" disabled selected>Selecione o estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select><br><br>
+
+        <p>* campo obrigatório <br></p>
+      
+        <input type="submit" value="Cadastrar" onclick="window.location.href = 'home-page.html'; return false;">
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer">
+        <p>Kopikat &copy; 2024. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

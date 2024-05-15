@@ -1,0 +1,652 @@
+/* Fontes */
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+  .poppins-medium {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+  }
+
+ 
+/* HEADER */
+
+#header-container {
+  background-color: black;
+  justify-content: center;
+}
+
+#Barra {
+    top: 0; 
+    left: 0;
+    width: 100;
+    padding: 0px;
+    color: white;
+    transition: top 0.3s;
+    margin: 0;
+    background-color: black;
+    z-index: 10;
+    /* Outros estilos para o cabeçalho */
+}
+
+/* Estilos para o cabeçalho quando fixado */
+#Barra.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    animation: slideDown 0.8s ease forwards;
+}
+
+/* Estilos para animação de entrada do cabeçalho */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.logo {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Ajusta o posicionamento vertical das imagens */
+  display: flex;
+  align-items: center;
+}
+
+#icon, #name {
+  width: auto;
+  height: 55px;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+  
+.nav-links li {
+    margin-right: 40px;
+}
+  
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: all  .2s ease;
+}
+  
+.nav-links li a:hover {
+    background-color: #ffd700;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    max-width: 960px; 
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.nav-button {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #ffd700;
+    color: #ffffff;
+}
+/* *************************** */
+/************ SEÇÕES ***********/  
+/* *************************** */
+/* SEÇÃO 1 */
+
+.featured-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  height: 70vh;
+  text-align: start;
+}
+
+.text-container {
+  flex: 1;
+}
+
+/* Estilo do botão */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+#descricao_headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-right: 0;
+  padding: 0;
+  overflow: hidden;
+  max-width: 50%; /* Define a largura máxima para a div pai */
+  
+}
+
+.image-container img {
+  max-width: 70%; /* Define a largura máxima para a imagem */
+  height: auto; /* Mantém a altura automática para manter a proporção */
+}
+
+
+
+/* SEÇÃO 2 */
+.section2 {
+  align-items: center;
+  background-color: #ffffff;
+  list-style: none;
+  padding: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 100vh;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.section2 ul {
+  display: flex;
+  list-style-type: none; /* Remover marcadores da lista */
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 ul li {
+  margin-right: 50px; /* Espaçamento entre as imagens */
+  width: 30%; 
+}
+
+.section2 ul li:last-child {
+  margin-right: 0; /* Remover margem à direita da última imagem */ 
+}
+
+.section2 ul li img {
+  border-radius: 30px; /* Define o raio do arredondamento das bordas */
+  box-shadow: 0px 10px 20px rgba(35, 35, 35, 0.51); /* Adiciona uma sombra */
+  height: auto;
+  width: 60%;
+}
+
+/* Divs*/
+#headline {
+    font-size: 3.6rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Nunito';
+    color: white;
+    line-height: 1.2;
+    margin: 0 0 1px;
+    text-shadow: #000;
+}
+
+#headline2 {
+    font-family: 'Nunito';
+    color: #000000;
+    font-size: 2.5rem;
+    line-height: 2.1rem;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 20px;  
+}
+/* lista das imagens <section 2> */
+.cards {
+  color: #000000;
+  font-family: 'Nunito';
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.fotos {
+  background-color: #fff;
+  width: 60%;
+  height: auto;
+}
+
+.instrucoes {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.descricao_cards {
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#headline3 {
+  font-family: 'Nunito';
+  color: #ffffff;
+  font-size: 3.0rem;
+  line-height: 2.1rem;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 80px;
+}
+
+.video {
+  display: flex;
+  padding: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.video h1 {
+  font-family: 'Nunito';
+  color: #ffffff;
+  font-size: 2.0rem;
+  line-height: 2.1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+#video{
+  border-radius: 30px; /* Define o raio do arredondamento das bordas */
+  box-shadow: 0px 10px 20px rgba(35, 35, 35, 0.51); /* Adiciona uma sombra */
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #ffd700;
+    margin: 0;
+    padding: 0;
+    background-image: url('fotos/waves_bg_3.png');
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+html {
+  margin: 0;
+}
+/************************* LOGIN **********************/
+/* Estilo do container de login */
+
+.login-section {
+  min-width: 100vh;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-content {
+  display: flex;
+  align-items: center;
+}
+
+.login-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-right: 0;
+  padding: 0;
+}
+.login-image img {
+  width: 80%; /* Defina a largura desejada */
+  height: 80%; /* Defina a altura desejada */
+  margin-bottom: 0;
+}
+/* Estilo da caixa de login */
+.login-box {
+  min-width: 100;
+  background-color: #ffffff;
+  padding: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex: 2;
+  padding-left: 0px;
+  padding-bottom: 0;
+  padding-right: 25vh;
+  padding-top: 0;
+  border-radius: 30px;
+}
+
+/* Estilo do cabeçalho do formulário */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Estilo dos campos de entrada do formulário */
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="email"],
+.login-box input[type="cel"]{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: block;
+  color: grey;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+/* Estilo do botão de login */
+.login-box input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffd700;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* Estilo do botão de login ao passar o mouse */
+.login-box input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+.login-form {
+  margin: 10px;
+  display: end;
+}
+
+/* página de login sem ser newsletter */
+.login-conteudo {
+  display: inline-flex;
+  align-items: center;
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 50px;
+  position: relative; /* Adicionando posição relativa para poder posicionar a linha */
+  background-color: #fff;
+  border-radius: 30px;
+  color: #000000;
+  margin: 15%;
+}
+
+.login-conteudo:after {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 35%; 
+  width: 2px; 
+  height: 30%; 
+  background-color: #000; 
+  transform: translateX(-50%);
+  transform: translateY(100%);
+  z-index: 1;
+  border-radius: 30px;
+  border-color: #000;
+}
+
+.login-conteudo form {
+  text-align: center;
+}
+
+.login-conteudo form button[type="submit"] {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ffd700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: none;
+  margin-left: 125px;
+}
+
+.login-conteudo form button[type="submit"]:hover {
+  background-color: #000000;
+}
+
+.login-pag {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.login-headline {
+  padding-bottom: 25px;
+}
+
+.login-pag input[type="text"],
+.login-pag input[type="password"]{
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  padding-left: 10px;
+  width: 50%;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.login-input {
+  text-align: center;
+  margin: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.login-input input {
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  padding-left: 10px;
+  width: 50%;
+}
+
+/* Página de Assine */
+
+.assine {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 50px;
+  /*max-width: 40%;*/
+  flex-direction: column;
+  color: #000000;
+  margin: 0 auto;
+  width: 30%;
+  font-family: "Poppins";
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: inline-block;
+  text-align: start;
+}
+
+.assine form {
+  width: 100%;
+}
+
+.assine h2 {
+  font-family: "Nunito";
+}
+
+.assine form input {
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.assine form textarea {
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.sem_numero {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#sem_numero {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 5%;
+}
+
+select {
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.assine input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  
+}
+
+.assine input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+#button-next {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+}
+
+#button-next:hover{
+  background-color: #000000;
+}
+
+.descricao_senha {
+  color: grey;
+  font-size: 0.8rem;
+  padding: 0;
+  margin-top: px;
+}
+
+/***** FOOTER *****/
+
+footer {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.0rem;
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+footer p {
+  display: inline;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  font-family: "Nunito";
+}

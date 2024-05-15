@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+    <link rel="stylesheet" href="style.css"> <!-- Importando o arquivo CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="/fotos/icon-logo[16x16].png">
+
+</head>
+<body>
+
+  <div id="header-container">
+    <header= id="Barra">
+        <nav> 
+            <div class="logo">
+                <a href="home-page.html">
+                    <image id="icon" src="fotos/icon-logo.png" alt= 'icon'>         
+                </a>
+                <a href="home-page.html">
+                    <image id="name" src="fotos/kopikat-name-bg-preto.png" alt='Frame_6'>         
+                </a>
+                
+            </div>
+            <ul class="nav-links">
+                <li><a href="assine.html">assine</a></li>
+            </ul>
+
+            <!--Esse botão vai ter que levar para uma página de login-->
+            <div class="nav-buttons">
+                <a href="login.html" class="nav-button">entrar</a>
+            </div>
+
+        </nav>
+    </header>
+</div>
+
+  <div id="parte1" class="assine">
+      <h2>QUEM É VOCÊ?</h2>
+      <form id="formulario" action="conexao.php" method="post">
+        <label for="nome">Nome completo *</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="cpf">CPF *</label><br>
+        <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" maxlength="14" oninput="this.value = formatarCPF(this.value);" required><br><br>
+        
+        <label for="email">Email *</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="senha">Senha *</label><br>
+        <input type="password" id="senha" name="senha" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+        <p class="descricao_senha">(mínimo 6 caracteres, letras e números)</p>
+        
+        <label for="confirmar_senha">Confirmar senha *</label><br>
+        <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
+
+        <p>* campo obrigatório <br></p>
+        
+        <input type="submit" value="Enviar">
+        <!--onclick="window.location.href = 'assine2.html'; return false;"-->
+      </form>
+    </div>
+
+  <footer>  
+    <div class="footer">
+        <p>Kopikat &copy; 2024. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
