@@ -8,11 +8,13 @@ Necessário ter XAMPP instalado.
 
 ## Instalação
 
-Forneça instruções passo a passo sobre como instalar o seu projeto.
+Instruções para instalação
 
 1. Clone o repositório usando `git clone`.
 2. Navegue até o diretório do projeto.
 3. Coloque o pasta do Projeto dentro da pasta 'htdocs' que se encontra na pasta 'c:/xampp/htdocs' (WINDOWS) ou '/Applications/XAMPP/xamppfiles/htdocs' (MacOS)
+4. Abra o XAMPP e inicie o Apache e MySQL.
+5. Acesse o site pelo navegador, no endereço: http://localhost/kopikat-main/
 
 ## Uso
 
