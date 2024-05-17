@@ -29,7 +29,7 @@ function toggleNumeroResidencia() {
     var numeroResidenciaInput = document.getElementById("numero_residencia");
 
     if (checkbox.checked) {
-        numeroResidenciaInput.value = ""; 
+        numeroResidenciaInput.value = "(S/N)"; 
         numeroResidenciaInput.required = false; 
         numeroResidenciaInput.disabled = true; 
     } else {
@@ -64,24 +64,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     const saibaMaisButton = document.querySelector('.featured-section .btn');
+document.addEventListener("DOMContentLoaded", function() {
+    const saibaMaisButton = document.querySelector('.featured-section .btn');
 
-//     saibaMaisButton.addEventListener('click', function(e) {
-//         e.preventDefault();
+    saibaMaisButton.addEventListener('click', function(e) {
+        e.preventDefault();
 
-//         const targetSection = document.getElementById('como-funciona');
+        const targetSection = document.getElementById('como-funciona');
 
-//         if (targetSection) {
-//             const offsetTop = targetSection.offsetTop;
+        if (targetSection) {
+            const offsetTop = targetSection.offsetTop;
 
-//             window.scrollTo({
-//                 top: offsetTop,
-//                 behavior: 'smooth'
-//             });
-//         }
-//     });
-// });
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 
 window.onscroll = function() {myFunction()};
     

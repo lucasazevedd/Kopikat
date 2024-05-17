@@ -109,12 +109,12 @@
                         </div>
                 <section>
                 <h2>Receba nossas novidades</h2>
-                <form action="#" method="post">
-                    <input type="text" name="username" placeholder="nome" required>
+                <form action="receba_novidades.php" method="post">
+                    <input type="text" name="nome" placeholder="nome" required>
                     <div>
                     <input type="email" name="email" placeholder="email" required>
                     </div>
-                    <input type="cel" name="phone" placeholder="celular" required>
+                    <input type="cel" name="telefone" placeholder="celular" pattern="\(\d{2}\) \d{4,5}-\d{4}" maxlength="15" oninput="this.value = formatarTelefone(this.value);" required>
                     <input class="btn" type="submit" value="quero receber novidades">
                 </form>
             </section>
