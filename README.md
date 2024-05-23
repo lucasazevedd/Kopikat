@@ -18,4 +18,5 @@ Instruções para instalação
 
 ## Uso
 
-Este código funciona como um trabalho acadêmico. Para usar, basta abrir o arquivo 'home-page.html' e navegar normalmente.
+Este código funciona como um trabalho acadêmico. Após a instalação do Banco de Dados, Xampp e de descompactar a pasta dentro da pasta htdocs basta acessar o navegador abrir http://localhost/kopikat-main/home-page.html e começar a navegar.
+

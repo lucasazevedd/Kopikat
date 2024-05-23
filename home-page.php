@@ -18,7 +18,6 @@ $logado = $_SESSION['email'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopikat</title>
-    <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Fontes Utilizadas-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,7 +54,7 @@ $logado = $_SESSION['email'];
         </header>
     </div>
     
-    <!--Garantir responsividade-->
+    
     <section class="featured-section">
         <div class="text-container">
           <h1 id="headline">O seu café nunca mais vai ser como antes</h1>
@@ -67,9 +66,6 @@ $logado = $_SESSION['email'];
         </div>
     </section>
 
-    <!--Terminar de preencher os espaços-->
-    <!--Definir altura e largura fixos, porém relativos a tela-->
-    <!--Garantir responsividade-->
     <section id="como-funciona" class="section2">
         <h1 id="headline2">COMO FUNCIONA?</h1>
 

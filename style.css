@@ -18,6 +18,21 @@
       font-style: normal;
   }
 
+body {
+    font-family: 'Poppins';
+    background-color: #ffd700;
+    margin: 0;
+    padding: 0;
+    background-image: url('fotos/waves_bg_3.png');
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+html {
+  margin: 0;
+}
  
 /* HEADER */
 
@@ -36,7 +51,6 @@
     margin: 0;
     background-color: black;
     z-index: 10;
-    /* Outros estilos para o cabeçalho */
 }
 
 /* Estilos para o cabeçalho quando fixado */
@@ -61,7 +75,7 @@
   margin-top: 50px;
   display: flex;
   align-items: center;
-  margin-top: 20px; /* Ajusta o posicionamento vertical das imagens */
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -143,9 +157,11 @@ nav {
     background-color: #ffd700;
     color: #ffffff;
 }
-/* *************************** */
-/************ SEÇÕES ***********/  
-/* *************************** */
+
+/* FIM DO HEADER */
+
+/* CORPO DA home-page.html */
+
 /* SEÇÃO 1 */
 
 .featured-section {
@@ -161,7 +177,6 @@ nav {
   flex: 1;
 }
 
-/* Estilo do botão */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -194,16 +209,26 @@ nav {
   margin-right: 0;
   padding: 0;
   overflow: hidden;
-  max-width: 50%; /* Define a largura máxima para a div pai */
-  
+  max-width: 50%;
 }
 
 .image-container img {
-  max-width: 70%; /* Define a largura máxima para a imagem */
-  height: auto; /* Mantém a altura automática para manter a proporção */
+  max-width: 70%; 
+  height: auto;
 }
 
+#headline {
+  font-size: 3.6rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: 'Nunito';
+  color: white;
+  line-height: 1.2;
+  margin: 0 0 1px;
+  text-shadow: #000;
+}
 
+/* FIM SEÇÃO 1 */
 
 /* SEÇÃO 2 */
 .section2 {
@@ -220,38 +245,26 @@ nav {
 
 .section2 ul {
   display: flex;
-  list-style-type: none; /* Remover marcadores da lista */
+  list-style-type: none; 
   padding: 0;
   align-items: center;
   justify-content: center;
 }
 
 .section2 ul li {
-  margin-right: 50px; /* Espaçamento entre as imagens */
+  margin-right: 50px; 
   width: 30%; 
 }
 
 .section2 ul li:last-child {
-  margin-right: 0; /* Remover margem à direita da última imagem */ 
+  margin-right: 0;  
 }
 
 .section2 ul li img {
-  border-radius: 30px; /* Define o raio do arredondamento das bordas */
-  box-shadow: 0px 10px 20px rgba(35, 35, 35, 0.51); /* Adiciona uma sombra */
+  border-radius: 30px; 
+  box-shadow: 0px 10px 20px rgba(35, 35, 35, 0.51); 
   height: auto;
   width: 60%;
-}
-
-/* Divs*/
-#headline {
-    font-size: 3.6rem;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-family: 'Nunito';
-    color: white;
-    line-height: 1.2;
-    margin: 0 0 1px;
-    text-shadow: #000;
 }
 
 #headline2 {
@@ -263,7 +276,7 @@ nav {
     font-weight: 700;
     padding-bottom: 20px;  
 }
-/* lista das imagens <section 2> */
+
 .cards {
   color: #000000;
   font-family: 'Nunito';
@@ -291,6 +304,10 @@ nav {
   width: 80%;
   margin: 0 auto;
 }
+
+/* FIM SEÇÃO 2 */
+
+/* SEÇÃO 3 */
 
 #headline3 {
   font-family: 'Nunito';
@@ -321,27 +338,15 @@ nav {
 }
 
 #video{
-  border-radius: 30px; /* Define o raio do arredondamento das bordas */
-  box-shadow: 0px 10px 20px rgba(35, 35, 35, 0.51); /* Adiciona uma sombra */
+  border-radius: 30px; 
+  box-shadow: 0px 10px 20px rgba(35, 35, 35, 0.51); 
 }
 
-body {
-    font-family: 'Poppins';
-    background-color: #ffd700;
-    margin: 0;
-    padding: 0;
-    background-image: url('fotos/waves_bg_3.png');
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
-    text-align: center;
-}
+/* FIM DA SEÇÃO 3 */
 
-html {
-  margin: 0;
-}
-/************************* LOGIN **********************/
-/* Estilo do container de login */
+/* RECEBA NOVIDADES */
+
+/* Inicialmente essa parte da página seria um login, mas a ideia foi trocada para coletar dados para email marketing */
 
 .login-section {
   min-width: 100vh;
@@ -370,11 +375,11 @@ html {
   padding: 0;
 }
 .login-image img {
-  width: 80%; /* Defina a largura desejada */
-  height: 80%; /* Defina a altura desejada */
+  width: 80%; 
+  height: 80%; 
   margin-bottom: 0;
 }
-/* Estilo da caixa de login */
+
 .login-box {
   min-width: 100;
   background-color: #ffffff;
@@ -388,14 +393,12 @@ html {
   border-radius: 30px;
 }
 
-/* Estilo do cabeçalho do formulário */
 .login-box h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #000;
 }
 
-/* Estilo dos campos de entrada do formulário */
 .login-box input[type="text"],
 .login-box input[type="password"],
 .login-box input[type="email"],
@@ -412,7 +415,6 @@ html {
   font-size: 1.2rem;
 }
 
-/* Estilo do botão de login */
 .login-box input[type="submit"] {
   width: 100%;
   padding: 10px;
@@ -425,7 +427,6 @@ html {
   margin-bottom: 20px;
 }
 
-/* Estilo do botão de login ao passar o mouse */
 .login-box input[type="submit"]:hover {
   background-color: #000000;
 }
@@ -439,9 +440,9 @@ html {
 .login-conteudo {
   display: inline-flex;
   align-items: center;
-  text-align: center; /* Centraliza o conteúdo */
+  text-align: center; 
   padding: 50px;
-  position: relative; /* Adicionando posição relativa para poder posicionar a linha */
+  position: relative; 
   background-color: #fff;
   border-radius: 30px;
   color: #000000;
@@ -563,21 +564,6 @@ html {
   width: 100%;
 }
 
-.sem_numero {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-#sem_numero {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 5%;
-}
-
 select {
   border-radius: 30px;
   border: 2px solid #ccc;
@@ -600,23 +586,6 @@ select {
 }
 
 .assine input[type="submit"]:hover {
-  background-color: #000000;
-}
-
-#button-next {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ffd700;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: background-color 0.3s ease;
-  font-weight: 600;
-  font-size: 1.2rem;
-  border: none;
-}
-
-#button-next:hover{
   background-color: #000000;
 }
 

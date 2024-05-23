@@ -33,7 +33,7 @@
             die("Conexão falhou: " . $conn->connect_error);
         }
 
-        // Inserindo dados na tabela receba_novidades
+        // Insere dados na tabela receba_novidades
         $sql_receba_novidades = "INSERT INTO receba_novidades (nome, celular, email) VALUES ('$nome_completo', '$telefone', '$email')";
         if ($conn->query($sql_receba_novidades) === TRUE) {
             $id_novidades = $conn->insert_id; // Obtém o ID gerado automaticamente
@@ -45,12 +45,12 @@
         // Fecha conexão com o banco de dados
         $conn->close();
     } else {
-        // Se os dados do formulário não forem recebidos corretamente, exiba uma mensagem de erro
+        // Se os dados do formulário não forem recebidos corretamente, exibe uma mensagem de erro
         echo "Erro: Dados do formulário não recebidos corretamente.";
     }
-        // Redireciona para a página inicial (index.html)
+        // Redireciona para a página inicial (home-page.html)
         header("Location: home-page.html");
-        exit; // Certifique-se de sair após o redirecionamento
+        exit; // Certifica de sair após o redirecionamento
 ?>
     </main>
 </body>

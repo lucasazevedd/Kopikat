@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $conn->real_escape_string($email);
     $senha = $conn->real_escape_string($senha);
 
-    // Consulta ao banco de dados
+    // Consulta o banco de dados
     $sql = "SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha'";
     $result = $conn->query($sql);
 

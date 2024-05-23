@@ -1,3 +1,4 @@
+//Desloga o usuário
 <?php
 session_start();
 session_unset();

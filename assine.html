@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="/fotos/icon-logo[16x16].png">
-    <style>
-        /* Seus estilos CSS personalizados */
-    </style>
+    
 </head>
 <body>
     <div id="header-container">
@@ -31,7 +29,7 @@
                     </a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="assine12.html">assine</a></li>
+                    <li><a href="assine.html">assine</a></li>
                 </ul>
                 <div class="nav-buttons">
                     <a href="login.html" class="nav-button">entrar</a>
@@ -40,6 +38,7 @@
         </header>
     </div>
 
+    <!-- trocar o ID "parte1" -->
     <div id="parte1" class="assine">
         <h2>QUEM É VOCÊ?</h2>
         <form id="formulario" action="conexao.php" method="post">
@@ -61,10 +60,10 @@
             <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
     
             <label for="telefone">Telefone *</label><br>
-            <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(00) 00000-0000" maxlength="15" oninput="this.value = formatarTelefone(this.value);"><br><br>  
+            <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(00) 00000-0000" maxlength="15" oninput="this.value = formatarTelefone(this.value) ;" required><br><br>  
             
             <label for="segundo_telefone">Segundo telefone</label><br>
-            <input type="tel" id="segundo_telefone" name="segundo_telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(00) 00000-0000" maxlength="15" oninput="this.value = formatarTelefone(this.value);" required><br><br>
+            <input type="tel" id="segundo_telefone" name="segundo_telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(00) 00000-0000" maxlength="15" oninput="this.value = formatarTelefone(this.value);"><br><br>
             
             <label for="cep">CEP *</label><br>
             <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" maxlength="9" oninput="this.value = formatarCEP(this.value);" required><br><br>
@@ -73,12 +72,7 @@
             <input type="text" id="endereco" name="endereco" required><br><br>
   
             <label for="numero_residencia">Número da residência *</label><br>
-            <input type="text" id="numero_residencia" name="numero_residencia" required><br><br>    
-              
-            <!-- <div class="sem_numero">
-                <input type="checkbox" id="sem_numero" name="sem_numero" onchange="toggleNumeroResidencia()">
-                <label for="sem_numero">sem número</label>
-            </div><br> -->
+            <input type="number" id="numero_residencia" name="numero_residencia" required><br><br>    
             
             <label for="complemento">Complemento</label><br>
             <textarea id="complemento" name="complemento" rows="4" cols="50"></textarea><br><br>
@@ -130,13 +124,6 @@
                 <p>Kopikat &copy; 2024. Todos os direitos reservados.</p>
             </div>
         </footer>
-        
-        <script>
-            function mostrarParte2() {
-                document.getElementById("parte1").style.display = "none";
-                document.getElementById("parte2").style.display = "block";
-            }
-        </script>
         
         <script src="script.js"></script>
 </body>

@@ -1,3 +1,4 @@
+  //Formatar CPF no formulário
   function formatarCPF(cpf){
     cpf = cpf.replace(/\D/g,"");
     cpf = cpf.replace(/(\d{3})(\d)/,"$1.$2");
@@ -6,6 +7,7 @@
     return cpf;
 }
 
+//Formatar o Telefone dentro do Formulário
 function formatarTelefone(telefone){
     telefone = telefone.replace(/\D/g,"");
     telefone = telefone.replace(/^(\d)/,"($1");
@@ -18,24 +20,11 @@ function formatarTelefone(telefone){
     return telefone;
 }
 
+//Formatar o CEP dentro do Formulário
 function formatarCEP(cep){
     cep = cep.replace(/\D/g,"");
     cep = cep.replace(/^(\d{5})(\d)/,"$1-$2");
     return cep;
-}
-
-function toggleNumeroResidencia() {
-    var checkbox = document.getElementById("sem_numero");
-    var numeroResidenciaInput = document.getElementById("numero_residencia");
-
-    if (checkbox.checked) {
-        numeroResidenciaInput.value = "(S/N)"; 
-        numeroResidenciaInput.required = false; 
-        numeroResidenciaInput.disabled = true; 
-    } else {
-        numeroResidenciaInput.required = true;
-        numeroResidenciaInput.disabled = false; 
-    }
 }
 
 
@@ -83,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//Header seguir na página
 window.onscroll = function() {myFunction()};
     
     var header = document.getElementById("Barra");
@@ -97,7 +87,6 @@ window.onscroll = function() {myFunction()};
     }
 
 //Verifica se as senhas coincidem
-
 function validarSenha() {
     var senha = document.getElementById("senha").value;
     var confirmarSenha = document.getElementById("confirmar_senha").value;
@@ -109,7 +98,7 @@ function validarSenha() {
     return true;
 }
 
-// Adicionando evento de escuta para o envio do formulário
+//Não deixa sair da página se as senhas não coincidem
 document.getElementById("formulario").addEventListener("submit", function(event) {
     if (!validarSenha()) {
         event.preventDefault(); // Impede o envio do formulário se as senhas não coincidirem
