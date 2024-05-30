@@ -28,13 +28,13 @@ function formatarCEP(cep){
 }
 
 
-//ROLAGEM DINAMICA//
+//ROLAGEM DINAMICA
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('.nav-links li a');
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            if (!link.href.includes('assine.html')) { // Adicionando uma exceção para o link "assine"
+            if (!link.href.includes('assine.html')) { 
                 e.preventDefault();
 
                 const targetId = this.getAttribute('href').substring(1);
